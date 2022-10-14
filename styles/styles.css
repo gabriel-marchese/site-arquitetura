@@ -4,9 +4,24 @@
     padding: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --primary-color: #4F4F4F;
+    --secondary-color: #ff87b7;
+}
+
+h1{
+    color: var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+}
+
 header{
-    background-color: rgba(250, 235, 215);
-    
+    background-color: var(--primary-color);
+    position: fixed;
+    width: 100%;
+    min-height: 80px;
 }
 
 .container{
@@ -25,7 +40,6 @@ header{
 
 nav{
     background-color: var(--cor5);
-    min-height: 35px;
     
 }
 
@@ -35,16 +49,89 @@ a {
     text-decoration: none;
     padding: 10px 5px;
     margin-left: 5px;
-    
+    font-family: 'Montserrat', sans-serif;
 }
 
-ul{
-    display: flex;
-    padding: 10px 5px;
-    margin-left: 5px;
+header a img {
+    margin-top: 5px;
 }
 
-
-li{
+header ul {
     list-style: none;
+    display: flex;
+
+}
+
+header ul li a {
+    display: block;
+    font-family: var(--fonte-titulo);
+    color: var(--secondary-color);
+    position: relative;
+    margin-left: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0.3rem;
+    left: 50%;
+    width: 0px;
+    height: 0.2rem;
+    background: var(--secondary-color);
+    transition: all 150ms ease-in-out;
+    border-radius: 2px;
+
+}
+
+header ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+}
+
+.intro{
+    padding-top: 80px;
+}
+
+.fundo-principal{
+    background-image: url(../imagens/fundo001.jpg);
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    background-position: center top;
+    background-size: 100%;
+}
+
+aside{
+    width: 500px;
+    width: 100%;
+    align-items: center;
+    justify-content: right;
+    text-align: right;
+    padding-top: 100px;
+}
+
+.span-color{
+    color: var(--secondary-color);
+}
+
+aside p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #4F4F4F;
+    padding: 8px 0px;
+    margin-bottom: 30px;
+}
+
+aside a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    background-color: var(--primary-color);
+    color: whitesmoke;
+    padding: 16px;
+    border-radius: 12px;
+}
+
+aside a:hover{
+    color: var(--secondary-color);
+    padding: 18px;
 }
