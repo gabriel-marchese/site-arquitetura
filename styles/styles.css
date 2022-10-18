@@ -99,6 +99,7 @@ header ul li a:hover::after {
     min-height: 80vh;
     background-position: center top;
     background-size: 100%;
+    background-size: cover;
 }
 
 aside{
@@ -128,12 +129,14 @@ aside a{
     background-color: var(--primary-color);
     color: whitesmoke;
     padding: 16px;
-    border-radius: 12px;
 }
 
 aside a:hover{
-    color: var(--secondary-color);
-    padding: 18px;
+    transition-delay: 30ms;
+    color: var(--primary-color);
+    background-color: whitesmoke;
+    border: 1px solid var(--secondary-color);
+
 }
 
 .bloco{
