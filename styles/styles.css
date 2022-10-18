@@ -147,7 +147,7 @@ aside a:hover{
 }
 
 .card{
-    background-color: #4f4f4f;
+    background-color: rgb(255, 250, 244);
     width: 250px;
     height: 300px;
     margin: 10px;
