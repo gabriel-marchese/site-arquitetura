@@ -5,10 +5,15 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap');
 
 :root {
     --primary-color: #4F4F4F;
     --secondary-color: #ff87b7;
+
+    --primary-font: 'Montserrat', sans-serif;
+    --secondary-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body{
@@ -17,8 +22,25 @@ body{
 
 h1{
     color: var(--primary-color);
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--primary-font);
     font-size: 3em;
+}
+
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3{
+    font-family: var(--secondary-font);
+    
+    font-size: 1.7em;
+}
+
+.black{
+    background-color: var(--primary-color);
+    padding: 30px;
+    border-top: 2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
 }
 
 header{
@@ -53,7 +75,7 @@ a {
     text-decoration: none;
     padding: 10px 5px;
     margin-left: 5px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--primary-font);
 }
 
 header a img {
@@ -72,7 +94,7 @@ header ul li a {
     color: var(--secondary-color);
     position: relative;
     margin-left: 15px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--primary-font)
 }
 
 header ul li a::after {
@@ -121,7 +143,7 @@ aside{
 }
 
 aside p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--primary-font);
     font-size: 18px;
     color: #4F4F4F;
     padding: 8px 0px;
@@ -131,10 +153,11 @@ aside p {
 .bloco-pequeno{
     width: auto;
     margin-bottom: 70px;
+    
 }
 
 aside a{
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--primary-font);
     font-size: 22px;
     background-color: var(--primary-color);
     color: whitesmoke;
@@ -150,7 +173,7 @@ aside a:hover{
 }
 
 .bloco{
-    height: 60vh;
+    height: 50vh;
 }
 
 .cards{
@@ -168,12 +191,8 @@ aside a:hover{
     text-align: center;
     padding: 22px;
     box-shadow: 0px 4px 4px  rgba(0, 0, 0, 0.349);
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--primary-font);
     font-size: 15px;
-}
-
-div#card01 > img{
-    
 }
 
 div.card > img{
@@ -186,10 +205,33 @@ div.card > h2{
     font-size: 24px;
     text-align: center;
     color: #4F4F4F;
+
 }
 
 div.card > p{
     font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--primary-font);
     line-height: 1.3em;
+}
+
+div.foto{
+    padding: 30px;
+}
+
+div.foto > img{
+    max-width: 400px;
+    max-height: 400px;
+    box-shadow: 6px 6px 0px var(--secondary-color);
+}
+
+div.about-me{
+    padding: 40px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+div.about-me > h3{
+    padding: 15px 0px 50px;
+    color: whitesmoke;
+    text-shadow: 2px 2px 1px black;
 }
