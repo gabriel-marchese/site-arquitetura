@@ -116,9 +116,6 @@ header ul li a:hover::after {
     left: 25%;
 }
 
-.intro{
-    
-}
 
 .vazia{
     width: 40vh;
@@ -242,4 +239,42 @@ div.about-me > h3{
     padding: 15px 0px 50px;
     color: var(--primary-color);
     font-size: 2.2em;
+}
+
+.project-content{
+    display: grid;
+    grid-template-areas: 
+    "text-r imagens-r"
+    "imagens-r-2 btn";
+    grid-template-columns: 1fr 1fr;
+}
+
+.text-r{
+    grid-area: text-r;
+    height: 10vh;
+    border-bottom:2px solid #ff87b7;
+    border-radius: 3px;
+}
+
+.imagens-r{
+    grid-area: imagens-r;
+    padding: 30px;
+}
+
+.imagens-r > img{
+    width: 80%;
+}
+
+.imagens-r-2{
+    grid-area: imagens-r-2;
+    padding: 30px;
+    margin-top: -200px;
+}
+
+.imagens-r-2 > img{
+    width: 100%;
+}
+
+.btn{
+    grid-area: btn;
 }
