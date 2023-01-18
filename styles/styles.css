@@ -257,7 +257,7 @@ div.about-me > h3{
 div.about-me p{
     letter-spacing: 1.5px;
     font-size: 16px;
-    line-height: 18px;
+    line-height: 20px;
     font-family: var(--primary-font);
 }
 
@@ -271,18 +271,21 @@ div.about-me p{
 
 .button-edit a{
     color: #1a1919;
-    border: 2px solid var(--secondary-color);
-    border-radius: 5px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
 }
 
 .logo{
     padding: 5px;
-
+    width: 20%;
 }
 
 .button-edit a:hover{
     color: #1a1919;
     background-color: var(--secondary-color);
+    border: 1px solid black;
 
 }
 
@@ -305,7 +308,7 @@ div.about-me p{
 
 .text-r{
     grid-area: text-r;
-    height: 39vh;
+    height: 37vh;
     border-bottom:2px solid #ff87b7;
     padding: 30px;
 }
