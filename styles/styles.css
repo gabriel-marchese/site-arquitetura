@@ -261,6 +261,31 @@ div.about-me p{
     font-family: var(--primary-font);
 }
 
+.buttons{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+
+.button-edit a{
+    color: #1a1919;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+.logo{
+    padding: 5px;
+
+}
+
+.button-edit a:hover{
+    color: #1a1919;
+    background-color: var(--secondary-color);
+
+}
+
 #teste{
     background-color: #c4c4c4;
     margin-bottom: 3em;
