@@ -251,7 +251,14 @@ div.about-me > h3{
     padding: 15px 0px 50px;
     color: var(--primary-color);
     font-size: 2.2em;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.384);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.568);
+}
+
+div.about-me p{
+    letter-spacing: 1.5px;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: var(--primary-font);
 }
 
 #teste{
