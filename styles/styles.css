@@ -272,7 +272,7 @@ div.about-me p{
 .button-edit a{
     color: #1a1919;
     border: 1px solid var(--secondary-color);
-    border-radius: 3px;
+    border-radius: 2px;
     display: flex;
     align-items: center;
 }
@@ -280,11 +280,12 @@ div.about-me p{
 .logo{
     padding: 5px;
     width: 20%;
+    padding-right: 10px;
 }
 
 .button-edit a:hover{
     color: #1a1919;
-    background-color: var(--secondary-color);
+    background-color: #f8b7d1;
     border: 1px solid black;
 
 }
