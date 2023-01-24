@@ -271,6 +271,9 @@ div.about-me p{
     padding: 50px;
 }
 
+.button-edit{
+    
+}
 
 .button-edit a{
     color: #1a1919;
@@ -281,8 +284,9 @@ div.about-me p{
 }
 
 .logo{
+    width: 35px;
+    height: 35px;
     padding: 5px;
-    width: 20%;
     padding-right: 10px;
 }
 
@@ -514,7 +518,7 @@ div.about-me p{
   
   .btn:hover {
     background-color: transparent;
-    color: #fff;
+    color: #1a1919;
   }
   
   .input-container span {
@@ -682,9 +686,21 @@ div.about-me p{
   }
 
 
+  @media(max-width:1450px){
+    .text-r{
+        grid-area: text-r;
+        height: 45vh;
+        border-bottom:2px solid #ff87b7;
+        padding: 30px;
+    }
+    .contact{
+        margin: 50vh 0vh 5vh 0vh;
+       }
+    
+  }
 
 
-  @media (max-height: 850px){
+  @media (max-width: 1025px){
     .contact{
         margin: 50vh 0vh 5vh 0vh;
        }
@@ -694,6 +710,78 @@ div.about-me p{
         height: 45vh;
         border-bottom:2px solid #ff87b7;
         padding: 30px;
+    }
+
+  }
+
+  @media (max-width: 937px){
+    .imagens-r-2{
+        grid-area: imagens-r-2;
+        padding: 30px;
+        margin-top: -150px;
+        visibility: hidden;
+    }
+  }
+  @media (max-width: 850px){
+
+    .vazia{
+        width: 0vh;
+    }
+
+    aside{
+        float: right;
+    }
+    
+
+    .buttons{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        
+    }
+    
+    .button-edit a{
+        color: #1a1919;
+        border: 1px solid var(--secondary-color);
+        border-radius: 2px;
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        
+    }
+    
+    .logo{
+        padding: 0px;
+        width: 30px;
+        height: 30px;
+        padding-right: 7px;
+
+    }
+    
+    .button-edit a:hover{
+        color: #1a1919;
+        background-color: #f8b7d1;
+        border: 1px solid black;
+    
+    }
+
+    .contact{
+        margin:0;
+       }
+    
+    .text-r{
+        grid-area: text-r;
+        height: 45vh;
+        border-bottom:2px solid #ff87b7;
+        padding: 30px;
+    }
+
+    .imagens-r-2{
+        grid-area: imagens-r-2;
+        padding: 30px;
+        margin-top: -150px;
+        visibility: hidden;
     }
 
   }
