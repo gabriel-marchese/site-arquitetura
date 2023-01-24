@@ -44,9 +44,9 @@ h2{
 }
 
 h3{
-    font-family: var(--secondary-font);
-    
+    font-family: var(--fonte-titulo);
     font-size: 1.7em;
+    color: #1b1b1b;
 }
 
 .black{
@@ -388,8 +388,7 @@ div.about-me p{
 .form {
     width: 100%;
     max-width: 1000px;
-    background-color: #fff;
-    border-radius: 10px;
+    background-color: #fff;  
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     overflow: hidden;
@@ -488,6 +487,7 @@ div.about-me p{
     pointer-events: none;
     z-index: 1000;
     transition: 0.5s;
+    font-family: var(--primary-font);
   }
   
   .input-container.textarea label {
@@ -601,15 +601,26 @@ div.about-me p{
   }
   
   .social-icons a {
-    width: 35px;
-    height: 35px;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
     border-radius: 5px;
     background: linear-gradient(45deg, #c94c7e, #f8b7d1);
     color: #1a1919;
     text-align: center;
-    line-height: 35px;
+    line-height: 40px;
     margin-right: 0.5rem;
     transition: 0.3s;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .img-contact{
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
   }
   
   .social-icons a:hover {
