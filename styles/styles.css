@@ -699,6 +699,20 @@ div.about-me p{
     
   }
 
+  @media(max-width:1367px){
+    .text-r{
+        grid-area: text-r;
+        height: 55vh;
+        border-bottom:2px solid #ff87b7;
+        padding: 30px;
+    }
+    .contact{
+        margin: 70vh 0vh 8vh 0vh;
+       }
+    
+  }
+
+
 
   @media (max-width: 1025px){
     .contact{
