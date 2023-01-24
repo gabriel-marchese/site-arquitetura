@@ -57,10 +57,12 @@ h3{
 }
 
 header{
+    z-index: 1000000;
     background-color: var(--primary-color);
     position: fixed;
     width: 100%;
     min-height: 80px;
+    border-bottom: 2px solid var(--secondary-color);
 }
 
 .container{
@@ -188,7 +190,7 @@ aside a:hover{
 }
 
 .bloco{
-    height: 70vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -299,6 +301,7 @@ div.about-me p{
 
 
 .project-content{
+    margin-top: 100px;
     display: grid;
     grid-template-areas: 
     "text-r imagens-r"
@@ -382,7 +385,7 @@ div.about-me p{
 }
 
 .contact{
-    margin-top: 160px;
+ margin: 20vh 0vh 5vh 0vh;
 }
 
 .form {
@@ -660,11 +663,11 @@ div.about-me p{
   }
 
   .dev p{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   footer div{
-    padding: 15px;
+    padding: 8px;
   }
 
   .span-link a{
@@ -676,4 +679,21 @@ div.about-me p{
 
   .span-link a:hover{
     color: whitesmoke;
+  }
+
+
+
+
+  @media (max-height: 850px){
+    .contact{
+        margin: 50vh 0vh 5vh 0vh;
+       }
+    
+    .text-r{
+        grid-area: text-r;
+        height: 45vh;
+        border-bottom:2px solid #ff87b7;
+        padding: 30px;
+    }
+
   }
