@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: content-box;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
@@ -23,6 +24,10 @@
     --secondary-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+ul{
+  margin-bottom: 0;
+}
+
 body{
     background-color: #e7e7e7;
 }
@@ -37,6 +42,10 @@ p{
     font-family: var(--secondary-font);
     font-size: 16px;
     color: rgba(0, 0, 0, 0.829);
+}
+
+.menu-h {
+  display: none;
 }
 
 h2{
@@ -150,7 +159,7 @@ aside{
     width: 500px;
     width: 100%;
     align-items: center;
-    justify-content: right;
+    justify-content: flex-end;
     text-align: right;
     height: 50vh;
 }
@@ -196,13 +205,13 @@ aside a:hover{
     justify-content: center;
 }
 
-.cards{
+.cardes{
     display: flex;
     justify-content: space-between;
 
 }
 
-.card{
+.carde{
     background-color: rgb(255, 255, 255);
     width: 230px;
     height: 300px;
@@ -215,12 +224,12 @@ aside a:hover{
     font-size: 15px;
 }
 
-div.card > img{
+div.carde > img{
     align-items: center;
     padding: 10px;
 }
 
-div.card > h2{
+div.carde > h2{
     padding-bottom: 25px;
     font-size: 24px;
     text-align: center;
@@ -228,7 +237,7 @@ div.card > h2{
 
 }
 
-div.card > p{
+div.carde> p{
     font-size: 16px;
     font-family: var(--primary-font);
     line-height: 1.3em;
@@ -269,10 +278,6 @@ div.about-me p{
     justify-content: space-around;
     align-items: center;
     padding: 50px;
-}
-
-.button-edit{
-    
 }
 
 .button-edit a{
@@ -318,7 +323,6 @@ div.about-me p{
 .text-r{
     grid-area: text-r;
     height: 37vh;
-    border-bottom:2px solid #ff87b7;
     padding: 30px;
 }
 
@@ -345,7 +349,7 @@ div.about-me p{
     padding: 30px;
 }
 
-.imagens-r > img{
+#ft-001{
     width: 100%;
     margin: 0;
     border-right: 6px solid var(--secondary-color);
@@ -357,9 +361,10 @@ div.about-me p{
     margin-top: -260px;
 }
 
-.imagens-r-2 > img{
+#ft-002{
     width: 100%;
     border-left: 6px solid var(--primary-color);
+    height: 250px;
 }
 
 .btn1{
@@ -690,7 +695,7 @@ div.about-me p{
     .text-r{
         grid-area: text-r;
         height: 45vh;
-        border-bottom:2px solid #ff87b7;
+ 
         padding: 30px;
     }
     .contact{
@@ -703,7 +708,7 @@ div.about-me p{
     .text-r{
         grid-area: text-r;
         height: 55vh;
-        border-bottom:2px solid #ff87b7;
+  
         padding: 30px;
     }
     .contact{
@@ -722,7 +727,7 @@ div.about-me p{
     .text-r{
         grid-area: text-r;
         height: 45vh;
-        border-bottom:2px solid #ff87b7;
+
         padding: 30px;
     }
 
@@ -787,7 +792,7 @@ div.about-me p{
     .text-r{
         grid-area: text-r;
         height: 45vh;
-        border-bottom:2px solid #ff87b7;
+ 
         padding: 30px;
     }
 
@@ -799,3 +804,131 @@ div.about-me p{
     }
 
   }
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 100vw;
+  }
+
+  .container {
+    width: 100vw;
+    max-width: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .cardes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carde {
+    height: 250px;
+    margin-bottom: 20px;
+  }
+
+  .cardes>div {
+    margin-top: 0;
+  }
+  .cardes>:nth-child(1) {
+    margin-top: -50px;
+  }
+  .sobre {
+    flex-direction: column;
+  }
+  .bloco {
+    height: fit-content;
+  }
+  .project-content {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    --bs-gutter-x: 0rem;
+    margin: 0;
+  }
+
+.form{
+  display: flex;
+  flex-direction: column;
+}
+
+.imagens-r-2 {
+  padding: 0;
+}
+
+.imagens-r-2>div {
+  height: 90px;
+  width: 10px ;
+}
+
+.btn1 {
+  margin: 50px;
+}
+
+.menu-h {
+  display: block;
+  margin-right: 10px;
+}
+
+.menu-h>img {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+}
+
+.foto>img {
+  width: 200px;
+  height: 300px;
+}
+
+.foto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.about-me {
+  margin-left: 0;
+  padding: 20px;
+}
+
+footer{
+  margin-top: 20px;
+}
+
+footer>div {
+  padding: 0;
+}
+
+footer>:nth-child(2) {
+  padding-bottom: 10px;
+}
+
+.fundo-principal {
+  min-height: 60vh;
+  background-position: center top;
+}
+
+.intro {
+  margin-top: 100px;
+}
+
+aside>h1 {
+  font-size: 2rem;
+  padding-right: 10px;
+}
+
+aside>a {
+  font-size: 18px;
+  padding: 12px;
+  margin-right: 20px;
+}
+
+
+}
