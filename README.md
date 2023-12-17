@@ -1,4 +1,4 @@
-# Gym FitClub 🏋🏽
+# Site Arquitetura 🏠
 
 ### Caso queira ver este site no ar, entre no link abaixo:
 ### https://gabriel-marchese.github.io/site-arquitetura/ 
